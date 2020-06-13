@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <style>
+            p{
+                color:'blue';
+                font-size: 40px;
+            }
+        </style>
+
+    </head>
+    <body>
+        {% include 'users/index.html' %}
+        {% block head %}
+        {% endblock %}
+        <h1 style="color:red">{{ error }}</h1>
+        <form method="POST" action="/users/aftersign/" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ f.as_p }}
+            <input type="submit" value="Signup">
+        </form>
+    </body>
+</html>
