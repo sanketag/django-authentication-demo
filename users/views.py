@@ -85,7 +85,7 @@ def forgot(request):
     subject = "Otp for forgot password to some foolish students.."
     otp = randint(1000,9999)
     message = "Your otp is " + str(otp)
-    from_email = "simrangrover5@gmail.com"
+    from_email = "sanketagarwal35@gmail.com"
     to_email = "tewarishivoham@gmail.com"
     send_mail(subject,message,from_email,[to_email],auth_password=settings.EMAIL_HOST_PASSWORD)
     return HttpResponse("Hurray.........")
