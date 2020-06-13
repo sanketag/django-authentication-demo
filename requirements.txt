@@ -1,5 +1,5 @@
 python
 django supported IDE (visual studio code)
-
-
-
+mysql server (xampp)
+create migrations
+some user data to test project
